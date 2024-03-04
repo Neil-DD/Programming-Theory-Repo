@@ -561,7 +561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  hasPowerup: 0
   powerupIndicator: {fileID: 1534731429}
   rocketPrefab: {fileID: 7744826596771243531, guid: 57928ab0ff0cc434d8ad25ebff5f3ad9, type: 3}
 --- !u!54 &1982429302
@@ -614,7 +613,6 @@ MonoBehaviour:
   - {fileID: 7540607685426736208, guid: 97edf7bd2978147f8b1a4a8b3794264f, type: 3}
   - {fileID: 8970011363349663105, guid: e6482f788c9b24702ae50e478bcd8b1a, type: 3}
   spawnRange: 9
-  waveNumber: 0
   powerupPrefabs:
   - {fileID: 6557813412466722117, guid: acaeaa90c272547f3936a30225038616, type: 3}
   - {fileID: 4674640769778740760, guid: 4e9a2d5afe47344219ee1eb87f4f76be, type: 3}
@@ -746,6 +744,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkyDome
       objectReference: {fileID: 0}
+    - target: {fileID: 7121473127542220366, guid: dfa091bb094fa4e2a8efba60f6e4daa7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300006, guid: 1340630fb7a3267499177be33f281f05, type: 3}
+    - target: {fileID: 8120999301846569681, guid: dfa091bb094fa4e2a8efba60f6e4daa7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e68f77e240a7f8643b5cc4253dc37516, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfa091bb094fa4e2a8efba60f6e4daa7, type: 3}
 --- !u!1001 &7062379724545088036

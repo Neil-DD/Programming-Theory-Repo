@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
 
     private GameObject focalPoint;
 
-    private bool hasPowerup = false;
+    private bool m_hasPowerup = false;
+    public bool HasPowerup => m_hasPowerup;
 
     private float powerupStrength = 15f;
 
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Powerup"))
         {
-            hasPowerup = true;
+            m_hasPowerup = true;
             currentPowerupType = other.gameObject.GetComponent<Powerup>().powerupType;
             powerupIndicator.SetActive(true);
             Destroy(other.gameObject);
@@ -107,7 +108,7 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
-        hasPowerup = false;
+        m_hasPowerup = false;
         powerupCountdown = null;
         powerupIndicator.SetActive(false);
     }
